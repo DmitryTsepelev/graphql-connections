@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-describe GraphQL::Connections::Stable do
+describe GraphQL::Connections::Key do
   let_it_be(:msg_a) { Message.create!(body: "A", created_at: Time.local(2020, 10, 2, 15)) }
   let_it_be(:msg_b) { Message.create!(body: "B", created_at: Time.local(2020, 10, 2, 14)) }
   let_it_be(:msg_c) { Message.create!(body: "C", created_at: Time.local(2020, 10, 2, 13)) }

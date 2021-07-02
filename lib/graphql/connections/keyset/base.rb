@@ -8,9 +8,8 @@ module GraphQL
 
         SEPARATOR = '/'
 
-        def initialize(*args, field_key: nil, primary_key: nil, separator: SEPARATOR, **kwargs)
-          @primary_key = primary_key
-          @field_key = field_key
+        def initialize(*args, keys:, separator: SEPARATOR, **kwargs)
+          @field_key, @primary_key = keys
           @separator = separator
 
           super(*args, **kwargs)
